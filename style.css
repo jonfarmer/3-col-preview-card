@@ -1,0 +1,147 @@
+/*1.Global*/
+/*2.General*/
+/*3.Categories*/
+/*4.Functional*/
+
+
+/*1.Global*/
+.body {
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+
+
+
+
+
+
+/*2.General*/
+
+h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.5rem;
+    
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+
+
+
+
+/*3.Categories*/
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: inline-flex;
+    flex-direction: row;
+    width: 750px;
+    height: 500px;
+    columns: 3;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card h3 {
+    margin-top: 10px;
+}
+
+.card .sedan,
+.card .suv,
+.card .lux {
+    width: 33%;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.sedan {
+    
+    background-color: hsl(31, 77%, 52%);
+    
+}
+
+.suv {
+    
+    background-color: hsl(184, 100%, 22%);
+    
+}
+
+.lux {
+
+    background-color: hsl(179, 100%, 13%);
+    
+}
+
+.sedan .icon {
+    background-image: url(../3-column-preview-card/images/icon-sedans.svg);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.suv .icon {
+    background-image: url(../3-column-preview-card/images/icon-suvs.svg);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lux .icon {
+    background-image: url(../3-column-preview-card/images/icon-luxury.svg);
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+/*4.Functional*/
+.button{
+    background-color: hsl(0, 0%, 95%);
+    margin-top: 75px;
+    width: 80%;
+    padding: 2px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: content-box;
+    cursor: pointer;
+    border: 3px solid white;
+    border-color: hsl(0, 0%, 95%);
+}
+
+.sedan .button p {
+    color: hsl(31, 77%, 52%);
+}
+
+.suv .button p {
+    color: hsl(184, 100%, 22%);
+}
+
+.lux .button p{
+    color:hsl(179, 100%, 13%);
+}
+
+.button:active {
+    background-color: transparent;
+    
+}
+
+.button:active p {
+    color:hsl(0, 0%, 95%);
+}
+
+
+
