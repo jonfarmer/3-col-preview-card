@@ -84,7 +84,7 @@ p {
 }
 
 .sedan .icon {
-    background-image: url(../3-column-preview-card/images/icon-sedans.svg);
+    background-image: url(/images/icon-sedans.svg);
     height: 50px;
     width: 50px;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ p {
 }
 
 .suv .icon {
-    background-image: url(../3-column-preview-card/images/icon-suvs.svg);
+    background-image: url(/images/icon-suvs.svg);
     height: 50px;
     width: 50px;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ p {
 }
 
 .lux .icon {
-    background-image: url(../3-column-preview-card/images/icon-luxury.svg);
+    background-image: url(/images/icon-luxury.svg);
     height: 50px;
     width: 50px;
     background-repeat: no-repeat;
