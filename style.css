@@ -18,7 +18,7 @@
 
 /*2.General*/
 
-h3 {
+h2 {
     font-family: 'Big Shoulders Display', cursive;
     color: hsl(0, 0%, 95%);
     font-size: 2.5rem;
@@ -40,6 +40,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100vh;
 }
 
 .card {
@@ -53,8 +54,9 @@ p {
 }
 
 
-.card h3 {
+.card h2 {
     margin-top: 10px;
+    text-transform: uppercase;
 }
 
 .card .sedan,
@@ -83,74 +85,58 @@ p {
     
 }
 
-.sedan .icon {
-    background-image: url(/images/icon-sedans.svg);
-    height: 50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.suv .icon {
-    background-image: url(/images/icon-suvs.svg);
-    height: 50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
-}
-
-.lux .icon {
-    background-image: url(/images/icon-luxury.svg);
-    height: 50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    background-size: contain;
+.icon {
+    display: block;
+    max-width: 100%;
 }
 
 
 
 
 /*4.Functional*/
-.button{
+button{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
     background-color: hsl(0, 0%, 95%);
     margin-top: 75px;
     width: 80%;
-    padding: 2px;
+    padding: 20px;
     border-radius: 35px;
     text-decoration: none;
     box-sizing: content-box;
     cursor: pointer;
-    border: 3px solid white;
-    border-color: hsl(0, 0%, 95%);
+    border: 3px solid hsl(0, 0%, 95%);
 }
 
-.sedan .button p {
+.sedan button {
     color: hsl(31, 77%, 52%);
 }
 
-.suv .button p {
+.suv button {
     color: hsl(184, 100%, 22%);
 }
 
-.lux .button p{
+.lux button{
     color:hsl(179, 100%, 13%);
 }
 
-.button:active {
+button:active {
     background-color: transparent;
-    
-}
-
-.button:active p {
     color:hsl(0, 0%, 95%);
 }
 
 
+
+
 /*5.Responsiveness*/
 @media screen and (max-width:800px) {
+    .container {
+        height: auto;
+    }
+
     .card {
         display: flex;
         width: 350px;
@@ -173,10 +159,10 @@ p {
 
     .card p {
         width: 70%;
-        line-height: 2rem;
+        line-height: 2;
     }
 
-    .button {
+    button {
         width: 45%;
         margin-top: 25px;
     }
